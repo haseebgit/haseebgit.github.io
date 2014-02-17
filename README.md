@@ -1,7 +1,4 @@
-Building for Mobile Web Compatibility
+Fireofox OS UA Detection.We need your help!
+Flash Talk Meta Refresh 2014, Bangalore
 
-Presentation for Open Web Open Mic, Mozilla Toronto, Apr 10, 2013
 
-
-Like the presentation template? Grab the latest from
-https://github.com/codepo8/mozilla-presentation-templates
