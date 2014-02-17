@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="fade">
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- ^ if you want no numbers on the slides add a "nonumbers" class to the HTML element -->
+<head>
+	<title>Firefox OS UA Detection. We need your help!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h2>Fireofox OS UA Detection.We need your help!</h2>
+		<p class="footer">Abdul Rauf [:haseeb] (abdulraufhaseeb@gmail.com)</p>
+	</header>
+
+<!-- 
+	
+	Simply copy the whole block for each slide you want.
+	Special slides get extra classes. Each slide needs an ID 
+	to allow for bookmarking and target jumping.
+	
+	Images, videos and SVG objects are automatically centred
+	when you add a class of "middle"
+
+	If you add a "cover" class images are taking over the whole 
+	screen resized to height. Add a "w" class to resize to width.
+
+ -->
+	<div id="cover" class="slide"><div>
+		<section>
+			<header>
+				<h2>Fireofox OS UA Detection.</h2>
+                <h2>We need your help!</h2>
+			</header>
+			<img src="pictures/desktop-v-mobile.jpg" class="middle" alt="Icons of B2G and Firefox OS">
+                        <small class="credits">
+                <a>Photo by Smashing Magzine</a>
+            </small>
+			<footer class="byline">Abdul Rauf, Flash Talk Meta Refersh 2014, Bangalore</footer>
+		</section>
+	</div></div>
+<!--
+	<div id="intro" class="slide"><div>
+		<section>
+			<header>
+				<h2>Who am I?</h2>
+			</header>
+            <img src="pictures/desktop-v-mobile.jpg" height="200" class="left" alt="">
+			<p>Lawrence Mandel<br/>
+                lmandel@mozilla.com<br/>
+                @mmmandel
+            </p>
+                
+			<footer class="notes">
+                I run Mozilla's mobile Web compatibility effort
+			</footer>
+
+		</section>
+	</div></div>
+    --!>
+<!--
+    <div id="story1" class="slide cover"><div>
+        <section>
+            <header>
+                <h2>I'm gonna build something totally awesome</h2>
+            </header>
+            <img src="pictures/i-am-gonna-do-an-internet.gif" 
+                alt="I'm gonna do an internet" 
+                class="middle shadow"/>
+            <footer class="notes">
+                I'm going to start hacking.
+            </footer>
+        </section>
+    </div></div>
+    
+    <div id="story2" class="slide"><div>
+        <section>
+            <header>
+                <h2>I know, let's start with the iPhone</h2>
+            </header>
+            <img src="pictures/iphone.png"
+            alt="iPhone"
+            class="middle"
+            height="400"/>
+            <footer class="notes">
+                I know, I'll start by building my site for the iPhone.
+            </footer>
+        </section>
+    </div></div>
+    
+    <div id="story3" class="slide"><div>
+        <section>
+            <header>
+                <h2>I can tell if a device is an iPhone</h2>
+            </header>
+            <code class="small">Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25</code>
+            <footer class="notes">
+                The first thing many people do is start hacking based on code samples that they find online.
+            </footer>
+        </section>
+    </div></div>
+    
+    <div id="story4" class="slide cover"><div>
+        <section>
+            <header>
+                <h2>I'll grab some code from over here</h2>
+            </header>
+            <img src="pictures/cheat-test-exam.jpg"
+            alt="grab some code"
+            class="middle"
+            height="400"/>
+            <footer class="notes">
+                I know, I'll start by building my site for the iPhone.
+            </footer>
+            
+            <small class="credits">
+                <a href="http://www.businessinsider.com/nyu-professor-class-cheating-2011-7">Photo via businessinsider.com</a>
+            </small>
+        </section>
+    </div></div>
+
+
+    <div id="story5" class="slide cover"><div>
+        <section>
+            <header>
+                <h2>I've done it. Now I want more people using it.</h2>
+            </header>
+            <img src="pictures/greatsuccess.jpg"
+            alt="I'm gonna do an internet"
+            class="middle shadow"/>
+
+            <footer class="notes">
+                
+            </footer>
+        </section>
+    </div></div>
+
+    <div id="story6" class="slide cover"><div>
+        <section>
+            <header>
+                <h2>Here are some more devices&hellip;I guess I'll test with them all</h2>
+            </header>
+            <img src="pictures/devices.jpg" 
+                alt="lots of different devices"
+                class="middle shadow"/>
+            <footer class="notes">
+                There are a lot of devices on which your site/app will be used.
+            </footer>
+        </section>
+    </div></div>
+    
+    <div id="story7" class="slide cover"><div>
+        <section>
+            <header>
+                <h2>Oh, crap.</h2>
+            </header>
+            <img src="pictures/timrothtired.jpg"
+            alt="tired"
+            class="middle shadow"/>
+            <footer class="notes">
+            </footer>
+        </section>
+    </div></div>
+ -->
+
+
+
+
+	<div id="uadetection" class="slide"><div>
+		<section>
+			<header>
+				<h2>User Agent (UA) detection</h2>
+			</header>
+			<p>Firefox for Android:<br/>
+            <code class="small">Mozilla/5.0 (Android; Mobile; rv:27.0) Gecko/27.0 Firefox/27.0</code><br/>
+            iPhone:<br/>
+            <code class="small">Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25</code><br/>
+            Android:<br/>
+            <code class="small">Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19</code></p>
+		</section>
+	</div></div>
+    
+
+
+
+
+
+	<div id="ifuadetection" class="slide"><div>
+		<section>
+			<header>
+				<h2>Use UA detection as broad as possible</h2>
+			</header>
+            <ul>
+                <p>
+                    Detect <code>Mobi</code> for mobile devices<br/>
+                </p>
+
+		</section>
+	</div></div>
+    
+    <div id="ifuadetection2" class="slide"><div>
+		<section>
+			<header>
+				<h2>Detecting the "Mobi" token</h2>
+			</header>
+			<p><u>Firefox for Android</u>:<br/>
+            <code class="small">Mozilla/5.0 (Android; <b>Mobi</b>le; rv:20.0) Gecko/20.0 Firefox/20.0</code><br/>
+            <u>iPhone</u>:<br/>
+            <code class="small">Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 <b>Mobi</b>le/10A5376e Safari/8536.25</code><br/>
+            <u>Android</u>:<br/>
+            <code class="small">Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 <b>Mobi</b>le Safari/535.19</code></p>
+			<footer class="notes">
+			</footer>
+		</section>
+	</div></div>
+    
+    <div id="ifuadetection3" class="slide"><div>
+		<section>
+			<header>
+				<h2>Detecting the "Mobi" token (2)</h2>
+			</header>
+			<p><u>BlackBerry</u>:<br/>
+            <code class="small">Mozilla/5.0 (BB10; DeviceModel) AppleWebKit/537.10+ (KHTML, like Gecko) Version/BBVersion# <b>Mobi</b>le Safari/537.10+</code><br/>
+            <u>Windows Phone</u>:<br/>
+            <code class="small">Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IE<b>Mobi</b>le/10.0; ARM; Touch; NOKIA; Lumia 920)</code><br/>
+            <u>Opera</u>:<br/>
+            <code class="small">Opera/9.80 (Android 4.0.4; Linux; Opera <b>Mobi</b>/ADR-1210081231) Presto/2.11.355 Version/12.10</code></p>
+			<footer class="notes">
+			</footer>
+		</section>
+	</div></div>
+
+
+
+
+
+    <div id="whatyoucando" class="slide"><div>
+		<section>
+			<header>
+				<h2>What you can do</h2>
+			</header>
+			<p>Lots of broken sites out there. We need your help.</p>
+            <ul>
+                <li>Follow best practices</li>
+                <li>Publish complete code examples</li>
+                <li>Report broken sites<br/> (https://bugzilla.mozilla.org/form.mobile.compat)</li>
+            </ul>
+            <footer class="notes">
+            </footer>
+            
+		</section>
+	</div></div>
+    <div id="listofsites" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sites that need help</h2>
+      </header>
+      <ul class="lots">
+        <li>rediff.com</li>
+        <li>bhaskar.com </li>
+        <li>oneindia.in</li>
+        <li>homeshop18.com</li>
+        <li><strike>makemytrip.com</strike></li>
+        <li>yebhi.com</li>
+        <li>bookmyshow.com</li>
+        <li>axisbank.com</li>
+        <li>asklaila.com</li>
+        <li>cardekho.com</li>
+        <li>fashionandyou.com</li>
+        <li>carwale.com</li>
+        <li><strike>cleartrip.com</strike></li>
+        <li>mysmartprice.com</li>
+        <li>timesofindia.com</li>
+        <li>indianexpress.com</li>
+        <li><strike>gaana.com</strike></li>
+        <li>jagran.com</li>
+        <li>raaga.com</li>
+        <li>icicibank.com</li>
+        <li>indeed.co.in</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+	<div id="thanks" class="slide"><div>
+		<section>
+			<header>
+				<h2>Thanks</h2>
+			</header>
+                 <br/>
+            <p>
+                Abdul Rauf [:haseeb]<br/>
+                abdulraufhaseeb@gmail.com<br/>
+                @haseeb_offline<br/>
+                www.webcompat.com<br/>
+                <br/>
+                come say hi #webcompat (irc.mozilla.org:6687)
+            </p>
+            <footer class="notes">
+            </footer>
+
+		</section>
+	</div></div>
+
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="scripts/script.js"></script>
+	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
